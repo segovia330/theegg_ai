@@ -184,6 +184,7 @@ Working staging area y repo.
 Permite ramas.  
 - Se suele usar rama master y paralela rama dev.  
   - La master no se toca. Y se trabaja sobre la dev todos, y luego se hace merge. Y cuando todo está probado OK, se mergea hacia master.  
+  
 git bash.  
 git comandos.  
 - git init       
