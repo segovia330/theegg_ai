@@ -1,13 +1,14 @@
 # Diccionario TheEgg
 
 # turing
-Alan Turing. matematico informatico teorico, criptografo filosfo,...
-Padre de la informatica
-Maquina de Turing: 
-    un dispositivo hipotético que representa una máquina de computación
-    es un dispositivo que manipula símbolos sobre una tira de cinta de acuerdo con una tabla de reglas
-    una cinta infinita, llena de simbolos. Los simbolos marcan el comportamiento de la máquina. La maquina lee un simbolo y puede modificarlo. Tambien puede mover la cinta para atrás y para adelante
+Alan Turing. matematico informatico teorico, criptografo filosfo,...  
+Padre de la informatica.  
+Maquina de Turing:  
+    Un dispositivo hipotético que representa una máquina de computación.  
+    Es un dispositivo que manipula símbolos sobre una tira de cinta de acuerdo con una tabla de reglas.  
+    Una cinta infinita, llena de simbolos. Los simbolos marcan el comportamiento de la máquina. La maquina lee un simbolo y puede modificarlo. Tambien puede mover la cinta para atrás y para adelante.  
 https://es.wikipedia.org/wiki/Alan_Turing
+
 
 # programación 
 diseño y codificación. Que genera un sw, que posteriormente se ejecuta sobre una maquina hw     
