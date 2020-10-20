@@ -6,8 +6,6 @@ csv_path = input()
 tara_camion = int(input())
 num_vacas = int(input())
 
-print(csv_path)
-print(tara_camion)
 
 lista = []
 lista_camion = []
@@ -94,6 +92,20 @@ def quitar_vaca (ind) :
     # ind_penultima_metida, ind_ultima_metida = actualizar_ult_penult_añadidas()
 
 
+def printar_sol_opt() :
+    k = 0
+    str_print = ''
+    while (k < len(lista_camion_opt)) :
+        if lista_camion_opt[k] == 1 :
+            str_print = str_print + str(lista_rend[k][0]) + ' '
+        k = k + 1
+
+    print('SOL OPT: Litros ', litros_metidos_opt)    # lista_camion_opt
+    print('Vacas ')
+    print(str_print)
+
+
+
 with open(csv_path) as csvarchivo:
     entrada = csv.reader(csvarchivo)
     cabecera = next(entrada)
@@ -109,14 +121,14 @@ with open(csv_path) as csvarchivo:
         lista.append([int(id_vaca), int(peso), int(produccion), rendimiento])
         lista_camion.append(0)
         lista_vacas_a_meter.append(0)
-        #print(lista[i])    
+        # print(lista[i])    
         a, b, c, d = lista[i]
-        print(a, b, c, d)
+        # print(a, b, c, d)
         i = i + 1
 
     # ordenamos lista por rendimiento de mayor a menor
     lista_rend = sorted(lista, key=operator.itemgetter(3), reverse=True)
-    print(lista_rend)
+    #print(lista_rend)
 
 
     # empezamos a meter vacas al camion hasta que no entren mas empezando por la primera de la lista
@@ -130,10 +142,10 @@ with open(csv_path) as csvarchivo:
 
     lista_camion_opt = lista_camion[:]
     litros_metidos_opt = litros_metidos
-    print(lista_camion, lista_camion_opt, media_rendimiento_cargadas, media_rendimiento_camion, ind_ultima_metida, litros_metidos)
+    # print(lista_camion, lista_camion_opt, media_rendimiento_cargadas, media_rendimiento_camion, ind_ultima_metida, litros_metidos)
 
     if peso_libre == 0 : 
-        print('SOL OPT', lista_camion_opt, litros_metidos_opt)  
+        printar_sol_opt()
         exit()
 
     # Estado 0 para adelante en la rama, se quita la ultima para meter mas.  Estado 1 se ha quitado dos hacia atras, ahora hay que intentar meter sin quitar, empezamos una nueva rama.
@@ -168,11 +180,11 @@ with open(csv_path) as csvarchivo:
                 Pz = Pz + lista_rend[i][1]
             i = i + 1
         
-        print(lista_vacas_a_meter, 'Peso libre', peso_libre, 'Pz', Pz)
+        # print(lista_vacas_a_meter, 'Peso libre', peso_libre, 'Pz', Pz)
 
-        if Pz != 0 :
-            print('IF ', peso_libre, lista_rend[ind_ultima_metida][2], lista_rend[ind_ultima_metida][1], Lz, Pz, lista_rend[ind_ultima_metida][2] / (lista_rend[ind_ultima_metida][1] + peso_libre), Lz / Pz)
-            print('IF2', peso_libre, litros_metidos_opt / tara_camion, ((media_rendimiento_cargadas * peso_ocupado - lista_rend[ind_ultima_metida][2]) + Lz / Pz * (lista_rend[ind_ultima_metida][1] + peso_libre)) / tara_camion)
+        #if Pz != 0 :
+        #    print('IF ', peso_libre, lista_rend[ind_ultima_metida][2], lista_rend[ind_ultima_metida][1], Lz, Pz, lista_rend[ind_ultima_metida][2] / (lista_rend[ind_ultima_metida][1] + peso_libre), Lz / Pz)
+        #    print('IF2', peso_libre, litros_metidos_opt / tara_camion, ((media_rendimiento_cargadas * peso_ocupado - lista_rend[ind_ultima_metida][2]) + Lz / Pz * (lista_rend[ind_ultima_metida][1] + peso_libre)) / tara_camion)
 
         # antes de quitar ninguna vaca, calcular si (Ly + 0) / (Py + x) < Lz / Pz. Donde 'y' es la ultima vaca metida, posible vaca a quitar. Y 'z' es las siguiente(s) vacas a meter para sustituir a 'y'
         # 'z' serán tantas vacas como quepan al quitar 'y'. Y no tienen porque ser seguidas, serán las primeras en la lista que entren.
@@ -185,7 +197,7 @@ with open(csv_path) as csvarchivo:
                 # quitar vaca
                 quitar_vaca(ind_ultima_metida)
 
-                print(lista_camion, 'Q', media_rendimiento_cargadas, media_rendimiento_camion, ind_ultima_metida, litros_metidos, peso_libre, peso_ocupado)
+                # print(lista_camion, 'Q', media_rendimiento_cargadas, media_rendimiento_camion, ind_ultima_metida, litros_metidos, peso_libre, peso_ocupado)
 
             # meter vacas nuevas. Recorrer lista_vacas_a_meter desde ind_ultima_metida. Y actualizar ind_ultima_metida también
             if (estado == 0) :
@@ -203,7 +215,7 @@ with open(csv_path) as csvarchivo:
             ind_penultima_metida, ind_ultima_metida = actualizar_ult_penult_añadidas()
             estado = 0
             
-            print(lista_camion, 'A', media_rendimiento_cargadas, media_rendimiento_camion, ind_ultima_metida, litros_metidos, peso_libre, peso_ocupado)
+            # print(lista_camion, 'A', media_rendimiento_cargadas, media_rendimiento_camion, ind_ultima_metida, litros_metidos, peso_libre, peso_ocupado)
             
             # si es solucion optima temporal se actualiza
             if (litros_metidos > litros_metidos_opt) :
@@ -212,7 +224,7 @@ with open(csv_path) as csvarchivo:
 
             # no hay hueco. Es optima. No se puede mejorar más
             if peso_libre == 0 : 
-                print('SOL OPT', lista_camion_opt, litros_metidos_opt)                
+                printar_sol_opt()
                 exit()
 
         else :
@@ -220,7 +232,7 @@ with open(csv_path) as csvarchivo:
             # si no se puede quitar más vacas hacia atrás hemos llegado al final
             # quitar vaca última metida
             ind_penultima_metida, ind_ultima_metida = actualizar_ult_penult_añadidas()
-            print(ind_penultima_metida, ind_ultima_metida)
+            # print(ind_penultima_metida, ind_ultima_metida)
 
             if (ind_ultima_metida >= 0) : 
 
@@ -233,12 +245,12 @@ with open(csv_path) as csvarchivo:
 
                 ind_penultima_metida, ind_ultima_metida = actualizar_ult_penult_añadidas()
 
-                print(lista_camion, 'Q2', media_rendimiento_cargadas, media_rendimiento_camion, ind_penultima_metida, ind_ultima_metida, litros_metidos, peso_libre, peso_ocupado)
+                # print(lista_camion, 'Q2', media_rendimiento_cargadas, media_rendimiento_camion, ind_penultima_metida, ind_ultima_metida, litros_metidos, peso_libre, peso_ocupado)
                 estado = 1
 
             # Si no se puede echar 2 para atras terminamos. No hay más caminos por recorrer
             else :
-                print('SOL OPT', lista_camion_opt, litros_metidos_opt)
+                printar_sol_opt()
                 exit()
 
         # debug_cycles = debug_cycles + 1
