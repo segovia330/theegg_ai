@@ -23,6 +23,7 @@ Cuando se ha llegado al punto en el que no caben más vacas en el camión, si el
 Si no, seguiremos por esa rama, para ello intentamos quitar la última vaca añadida para sustituirla por una o más vacas de menor rendimiento, con la idea de que aunque tengan menor rendimiento puedan dejar menos hueco en el camión y mejoren la suma de litros. Para saber si merece seguir por esa rama o no se mira la siguiente condición:  
 - que las vacas a añadir tengan mejor rendimiento L/Kg que la vaca a quitar teniendo en cuenta el hueco. O sea que suponiendo en el mejor de los casos, que las vacas a añadir rellenaran el hueco completo, si con su rendimiento no mejoran la media, no merece seguir por esa rama.  
 - y además que las vacas a añadir también en el mejor de los casos de rellenar el hueco pudieran mejorar la media de rendimiento del camión completo, de la solución optima provisional lograda hasta ahora.  
+
 En el caso de no seguir por la rama, se echa para atrás, a parte de la vaca que ibamos a quitar para seguir para adelante, quitando otra vaca más, la última y penultima añadidas.  
 Así se sigue ciclicamente hasta o bien recorrer todo el árbol o bien haber encontrado por el camino una solución que llena el 100% del camión.  
 
