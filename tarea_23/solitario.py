@@ -31,6 +31,7 @@ def buscar_joker_B (cartas) :
     return cartas.index('B')
 
 
+# genera un número de la clave. Equivalente a un char de la clave
 def generar_numero () :
     global cartas_en_juego
 
