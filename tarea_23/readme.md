@@ -27,4 +27,4 @@ Para ejecutarlo, se requiere tener python instalado. Abrir una consola, ir a la 
 Y ejecutar >solitario.py  
 
 Se debe introducir el mensaje de texto a cifrar.  
-Y se devuelve el mensaje cifrado y descifrado, que éste último debe coincidir con el mensaje de entrada.  
+Y se devuelve el mensaje cifrado y descifrado. Éste último debe coincidir con el mensaje de entrada.  
