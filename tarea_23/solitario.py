@@ -168,6 +168,7 @@ def desencriptar_mensaje (mensaje) :
 
 
 mensaje = input()
+mensaje = mensaje.upper()
 barajar (cartas_orig)
 
 
