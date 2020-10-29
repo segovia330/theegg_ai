@@ -322,3 +322,44 @@ Reglas:
 - A+0=A     A+1=1     A*0=0     A*1=A     A+A=A     A+NA=1     A*A=A     A*NA=0     NNA=A  
 - A+AB=A    A+NA*B=A+B     (A+B)*(A+C)=A+B*C  
 
+
+# arquitectura-cliente-servidor
+	Modelo en el que las comunicaciones se dividen en dos procesos que cooperan entre sí, intercambiando información de esta forma se separa la lógica de visualización y presentación de datos en cliente, con la lógica de negocio que corre en el servidor. Más que nada por seguridad y por eficiencia.  
+	cliente: el que inicia la petición.  
+	servidor: el que responde a esa petición.  
+	Al cliente también se le llama ForntEnd. La parte del lado del navegador web.  
+	Al servidor se le llama back end. La parte que corre en servidor físico.  
+		Aqui pueden correr varios servidores sw. http, https, ftp, dns, de correo,...  
+	Entre las tecnologias que se utilizan para el desarrollo de frontend y back end, más BBDD, más servidor http puerto 80, se le llama stack.  
+		LAMP: Linux Apache MySQL PHP  
+		MEAN: MondoDB Express Angular NodeJS  
+		
+
+# FTP
+	Protocolo de transferencia de archivos, que corre entre equipos conectados a red TCP.  
+	Está basado en modelo cliente servidor.  
+	
+
+# servidor-web
+	Programa que procesa una aplicacion del lado del servidor, realizando conexiones con el cliente.  
+	Las conexiones pueden ser unidireccionales bidireccionales, sincronas, asincronas.  
+	Generando una respuesto en cualquier lenguaje del lado del cliente.  
+	
+
+# IP
+	Dirección de un equipo. Númerico.  
+  Indentifica a un dispositivo conectado a una red.  
+	Normalmente usada IP4. 32 bits.  
+  Puede ser fija o dinámica, por DHCP.  
+
+# DNS
+	Domain name system.  
+	Sistema para dar nombres a equipos conectados a una red IP.  
+	Se utiliza una BBDD distribuida jerarquica.  
+	El uso más comun traducción de nombres a IPs.  
+
+# protocolo-TCP/IP
+  Conjunto de protocolos.  
+  TCP: protocolo de control de tranmisión.
+  IP: protocolo de control de internet
+  Protocolos que engloba: ARP, FTP, HTTP, SMTP, Telnet, DHCP, DNS, SNMP,...  
