@@ -324,42 +324,91 @@ Reglas:
 
 
 # arquitectura-cliente-servidor
-	Modelo en el que las comunicaciones se dividen en dos procesos que cooperan entre sí, intercambiando información de esta forma se separa la lógica de visualización y presentación de datos en cliente, con la lógica de negocio que corre en el servidor. Más que nada por seguridad y por eficiencia.  
-	cliente: el que inicia la petición.  
-	servidor: el que responde a esa petición.  
-	Al cliente también se le llama ForntEnd. La parte del lado del navegador web.  
-	Al servidor se le llama back end. La parte que corre en servidor físico.  
-		Aqui pueden correr varios servidores sw. http, https, ftp, dns, de correo,...  
-	Entre las tecnologias que se utilizan para el desarrollo de frontend y back end, más BBDD, más servidor http puerto 80, se le llama stack.  
-		LAMP: Linux Apache MySQL PHP  
-		MEAN: MondoDB Express Angular NodeJS  
+Modelo en el que las comunicaciones se dividen en dos procesos que cooperan entre sí, intercambiando información de esta forma se separa la lógica de visualización y presentación de datos en cliente, con la lógica de negocio que corre en el servidor. Más que nada por seguridad y por eficiencia.  
+Cliente: el que inicia la petición.  
+Servidor: el que responde a esa petición.  
+Al cliente también se le llama ForntEnd. La parte del lado del navegador web.  
+Al servidor se le llama back end. La parte que corre en servidor físico.  
+- Aqui pueden correr varios servidores sw. http, https, ftp, dns, de correo,...  
+Entre las tecnologias que se utilizan para el desarrollo de frontend y back end, más BBDD, más servidor http puerto 80, se le llama stack.  
+- LAMP: Linux Apache MySQL PHP  
+- MEAN: MondoDB Express Angular NodeJS  
 		
 
 # FTP
-	Protocolo de transferencia de archivos, que corre entre equipos conectados a red TCP.  
-	Está basado en modelo cliente servidor.  
+Protocolo de transferencia de archivos, que corre entre equipos conectados a red TCP.  
+Está basado en modelo cliente servidor.  
 	
 
 # servidor-web
-	Programa que procesa una aplicacion del lado del servidor, realizando conexiones con el cliente.  
-	Las conexiones pueden ser unidireccionales bidireccionales, sincronas, asincronas.  
-	Generando una respuesto en cualquier lenguaje del lado del cliente.  
+Programa que procesa una aplicacion del lado del servidor, realizando conexiones con el cliente.  
+Las conexiones pueden ser unidireccionales bidireccionales, sincronas, asincronas.  
+Generando una respuesto en cualquier lenguaje del lado del cliente.  
 	
 
 # IP
-	Dirección de un equipo. Númerico.  
-  Indentifica a un dispositivo conectado a una red.  
-	Normalmente usada IP4. 32 bits.  
-  Puede ser fija o dinámica, por DHCP.  
+Dirección de un equipo. Númerico.  
+Indentifica a un dispositivo conectado a una red.  
+Normalmente usada IP4. 32 bits.  
+Puede ser fija o dinámica, por DHCP.  
 
 # DNS
-	Domain name system.  
-	Sistema para dar nombres a equipos conectados a una red IP.  
-	Se utiliza una BBDD distribuida jerarquica.  
-	El uso más comun traducción de nombres a IPs.  
+Domain name system.  
+Sistema para dar nombres a equipos conectados a una red IP.  
+Se utiliza una BBDD distribuida jerarquica.  
+El uso más comun traducción de nombres a IPs.  
 
 # protocolo-TCP/IP
-  Conjunto de protocolos.  
-  TCP: protocolo de control de tranmisión.
-  IP: protocolo de control de internet
-  Protocolos que engloba: ARP, FTP, HTTP, SMTP, Telnet, DHCP, DNS, SNMP,...  
+Conjunto de protocolos.  
+TCP: protocolo de control de tranmisión.
+IP: protocolo de control de internet
+Protocolos que engloba: ARP, FTP, HTTP, SMTP, Telnet, DHCP, DNS, SNMP,...  
+
+
+# ETL
+Extract, transform, load.  
+Es el proceso de preparación de los datos antes de ser utilizados.  
+- Extracción: Total. Extrae los datos de una tacada. Incremental. Va extrayendo poco a poco, por lotes.  
+- Transformación: aquí influye la lógica de negocio. Se hacen en el staging area.  
+  - Las directrices de transformación deben ser:  
+    - Declarativas.  
+    - Independientes.  
+    - Claras.  
+    - Inteligibles.   
+    - Con finalidad util para el negocio.  
+  - Varias transformaciones típicas.  
+    - Filtrar filas por ciertas características.  
+    - Eliminar duplicados.  
+    - Transformar datos. Nombres a indices por ejemplo.  
+    - Calcular datos nuevos.  
+    - Agrupar datos de multiples fuentes.  
+    - Unir o combinar datos de distintas fuentes.  
+    - Pivotar las tablas.  
+    - Dividir columnas.  
+
+- Carga  
+  - Se pasan los datos transformados a BBDD analitica.  
+  - Importante que motor usar de BBDD. Eficiente en insertar datos.  
+  - Dos formas  
+    - Acumulación simple: se hace un resumen y se carga sólo el resultado.  
+    - Rolling: se resume información a varios niveles de granularidad.  
+
+
+# bases-de-datos
+Conjunto de datos que pertenecen al mismo contexto.  
+Almacenados y gestinados por un motor de BBDD.  
+Modelos relacionales y no relacionales.  
+- Realcionales: MySQL Oracle
+- No relacionales: Documentales: MongoDB
+
+
+
+# data-preprocessing
+Paso importante en data mining y machine learning.  
+A veces ocurre que hay datos fuera de rango, combinaciones imposibles absurdas, valores faltantes.  
+Es importante la calidad de los datos. Frase tipica, entra basura, sale basura.  
+Tareas:
+- Data cleaning: corregir datos erroneos, irrelevantes o imprecisos.  
+- Data editing: revisión y ajuste de los datos. Puede ser manual o auto.  
+- Data reduction: trasformacion de info numerica o alfabetica en una forma ordenada y simplificada.  
+- Data wrangling: conversión de dotos en crudo a otro formato más apropiado.  
