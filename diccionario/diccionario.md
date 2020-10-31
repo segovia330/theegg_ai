@@ -417,3 +417,47 @@ Tareas:
 # bucles-en-programación
 Es una secuencia de instrucciones que se ejecuta ciclicamente, mientras se cumpla cierta condición.  
 Los más tipicos: while y for  
+
+
+# API
+Application programming interface.  
+Permite comunicar distintos componentes sw.  
+Conjunto de funciones y metodos que ofrece una parte para ser utilizada en una aplicación.  
+Es una capa de abstracción.  
+Permite utilizar cosas hechas de terceros.  
+Tipos  
+- Locales  
+- Remotas  
+  - Web Service  
+    - SOAP  
+    - REST  
+      - Get Post Put Delete
+      - 
+
+
+# JSON
+Jasva Script Object notation.  
+Formato usando en APIs.  
+Es más moderno que XML. Más sencillo de parsear. Se usa en volumentes grandes de información.  
+El más usando actualmente. 2020.  
+Se considera un formato independiente del lenguaje.  
+
+
+# XML
+eXtensible Marckup Language.  
+Usado también en APIs. Para intercambio de información estructurada entre distintas plataformas.  
+
+
+# protocolo-de-comunicación
+Sistema de reglas que permite que varias computadoras se comuniquen entre ellas, y transmitan información.  
+Se define una sintaxis, semantica y sincronización.  
+También se define modo de recuperar errores.  
+Se definen los mensajes o tramas que se transmiten por la red.  
+Suele haber distintos protocolos en base al nivel de capa de abstracción.  
+- capa de aplicación.  
+- de transporte.  
+- de red.  
+- de enlace de datos.  
+- capa física.  
+
+
