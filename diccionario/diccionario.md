@@ -412,3 +412,8 @@ Tareas:
 - Data editing: revisión y ajuste de los datos. Puede ser manual o auto.  
 - Data reduction: trasformacion de info numerica o alfabetica en una forma ordenada y simplificada.  
 - Data wrangling: conversión de dotos en crudo a otro formato más apropiado.  
+
+
+# bucles-en-programación
+Es una secuencia de instrucciones que se ejecuta ciclicamente, mientras se cumpla cierta condición.  
+Los más tipicos: while y for  
