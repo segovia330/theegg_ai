@@ -461,3 +461,44 @@ Suele haber distintos protocolos en base al nivel de capa de abstracción.
 - capa física.  
 
 
+# bases-de-datos
+Colección de datos relacionados.  
+Almacenados y organizados de tal forma que los datos puedas ser consultados y actualizados.
+Componentes:
+- Campo: area de almacenamiento de un tipo concreto.  
+- Registro: coleccion de datos relacionada entre sí.  
+- Tabla: colección de registros.
+Tipos de BBDD:  
+- Relacionales: la información se encuentra en tablas relacionadas entre sí. Manejan la integridad de los datos.  
+- No relacionales: se usan para grandes volumenes de información.  
+- Distribuidas: Estan replicadas en distintas hubicaciones fisicas.  
+- Orientadas a objetos: A parte de contener los datos del objeto en sí, contienen su comportamiento.  
+
+
+# SQL
+BBDD relacionales.  
+Normalmente centralizadas.  
+MySQL, Oracle, SQL Server.  
+Con lenguaje SQL se pueden hacer las siguientes operaciones:  
+- Consultas.  
+- Insertar, acutalizar, borrar.  
+- Crear BBDD  
+- Crear procedimientos almacenados.  
+- Crear tablas.  
+- Crear vistas.  
+- Gestionar permisos de acceso.  
+
+
+# NoSQL
+Not only SQL. Puede usar SQL de apoyo.  
+Como prioridad la velocidad de acceso e insercion de datos. No la integridad de datos.  
+Manejan cantidades enormes de información.  
+Pueden ser distribuidas.  
+Varias NoSQL: MongoDB, Casandra, CouchDB  
+Lenguajes utilizados:  
+- JSON: JavaScript Object Notation.  
+- CQL: Contextual Query Language.  
+- GQL: Graph Query Language.  
+
+
+
