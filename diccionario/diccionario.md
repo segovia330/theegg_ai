@@ -502,3 +502,66 @@ Lenguajes utilizados:
 
 
 
+# dirección-IP
+ver IP.  
+
+
+# Internet
+Conjunto descentralizado de redes conectadas entre sí. Basado en TCP/IP.  
+El servicio más utlizado la web o www.  
+Otros servicios: Correo, FTP, IRC, VoIP, SSH, Telnet,...  
+
+
+
+# red-WAN
+Wide area network.  
+Redes de gran extension, que une varias redes locales u otro tipo de redes.  
+La redes WAN son creadas por empresas privadas o proveedores de internet.  
+Normalmente se utiliza la topologia de estrella.  
+
+
+# red-LAN
+Local area network.  
+Red de peqwueña extensión. Abarca un area como de una casa, un edificio.  
+
+
+# máscara-de-subred
+Define lo que se encuentra dentro y fuera de la subred.  
+A las máquinas que están dentro de la red, se puede acceder directamente, y a las que están fuera mediante un router.  
+
+
+# router
+Dispositivo inteligente, que la primera vez envia por todas las bocas, pero una vez que averigua el camino del equipo de destino, lo memoriza.  
+Sirve como pasarela entre redes.  
+Funcionan en la capa de red, manejando a nivel de IP.  
+
+
+
+# switch
+Dispositivo que conecta varios equipos, a nivel de capa de enlace de datos.  
+Pasa datos de un segmento a otro, en base a direcciones MAC.  
+Mejoran rendimiento comparando con hubs. Que transmiten por todas las bocas lo que entra por una.  
+
+
+# TCP-IP
+ver protocolo TCP-IP.  
+Protocolos:
+- TCP: 
+  - Orientado a la conexión.  
+  - Asegura la transmisión.  
+- UDP:  
+  - Servición no asegurado y sin conexión.  
+- IP: Protocolo de internet. Basado en direcciones de 4 octetos.  
+TCP/IP está basado en capas. Cada capa se comunica con la inferior y la superior.  
+- Nivel de enlace o acceso a la red. Capa física.   
+- Nivel de red o internet: proporciona paquetes de datos y maneja direcciones IP.  
+- Nivel de transporte: maneja estado de la transmisión como datos de enrutamiento.  
+- Nivel de aplicación: Telnet, FTP, SNMP,...  
+
+
+# IP-pública
+Es la dirección que identifica nuestra red en el exterior.  
+
+
+# IP-privada
+Es la dirección que identifica nuestro dispositivo en la nuestra interna.  
