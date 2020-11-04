@@ -565,3 +565,24 @@ Es la dirección que identifica nuestra red en el exterior.
 
 # IP-privada
 Es la dirección que identifica nuestro dispositivo en la nuestra interna.  
+
+
+# algoritmo
+ver arriba  
+carácteristicas:
+- Definido.  
+- Preciso.  
+- Finito.  
+tipo:
+- Grafico.  
+- No grafico: pseudo código.  
+
+
+# diagrama-de-flujo
+Diagrama que describe un proceso, sistema o algoritmo.  
+Elementos:
+- Terminador: ![Terminador](flowchart-symbols-terminatos.svg) 
+
+
+# convención-de-programación
+
