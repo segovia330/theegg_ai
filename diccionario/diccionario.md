@@ -580,9 +580,26 @@ tipo:
 
 # diagrama-de-flujo
 Diagrama que describe un proceso, sistema o algoritmo.  
-Elementos:
-- Terminador: ![Terminador](flowchart-symbols-terminatos.svg) 
+Se puede utilizar para explicar la lógica del programa, y demostrar como está organizado el código.  
+
+Elementos:  
+- Terminador: ![Terminador](flowchart-symbols-terminator.svg)  
+- Proceso: ![process](flowchart-symbols-process.svg)  
+- Documento: ![process](flowchart-symbols-document.svg)  
+- Decisión: ![process](flowchart-symbols-decision.svg)  
+- Datos de entrada/salida: ![process](flowchart-symbols-data.svg)  
+- Datos almacenados: ![process](flowchart-symbols-database.svg)  
+- Proceso predefinido: ![process](flowchart-symbols-predefined_process.svg)  
+
 
 
 # convención-de-programación
+Conjunto de reglas para nombrar identificadores, tipos, funciones, y entidades en general del código fuente.  
+Permite reducir esfuerzo para leer y entender código fuente.  
+Mejora la apariencia.  
+Evita conflictos de nombres.  
+Mejora consistencia dentro del equipo de desarrollo.  
+Permite refactorización automática con menos errores.  
+Cada lenguaje de programación tiene la suya.  
+
 
