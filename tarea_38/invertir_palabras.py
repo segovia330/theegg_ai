@@ -24,7 +24,7 @@ for frase in frases:
         frases_invertidas[ind_frase] = frase[:ind_esp] + ' ' + frases_invertidas[ind_frase]
         frase = frase[ind_esp + 1:]
         ind_esp = frase.find(' ')
-        print(frase, ind_esp)
+        # print(frase, ind_esp)
 
     print('Case #', ind_frase+1, frases_invertidas[ind_frase])
     ind_frase = ind_frase + 1
