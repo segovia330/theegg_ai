@@ -603,3 +603,108 @@ Permite refactorización automática con menos errores.
 Cada lenguaje de programación tiene la suya.  
 
 
+# redes-informáticas
+IPv4  
+- ClaseA: primero octeto red, 3 siguientes host. IP/8. Primer octeto 0..127.  
+- ClaseB: primeros dos octetos red y siguientes dos host. IP/16. Primer octero 128..191  
+- ClaseC: primeros tres octetos red y siguiente host. IP/24. Primer octero 192..223  
+Mascara de red:  
+- IP/8.   255.0.0.0  
+- IP/16.  255.255.0.0  
+- IP/24.  255.255.255.0  
+Subred:  
+- Se divide la parte host. Y se cogen varios bits de ahí, para separar entre subred y host.  
+- La mascara de red se convierte en mascara de subred. Por ej para un clase A. 255.240.0.0 usando 4 bits para la subred.  
+Dirección de red o subred: Es la de host 0.  La de broadcast la ultima.
+
+
+# Pentesting
+Testear a ver como se podría penetrar en un sistema.  
+Imitaría lo que haría un atacante.  
+
+
+# XSS
+Cross-side scripting. Secuencia de comandos en sitios cruzados.  
+En web apps.  
+Es una tecnica en la que un tercero inyecta código JavaScript (sobre todo) en paginas web que visita un usuario.  
+Sirve para robar info delicada, o secuestrar sesiones de usuario.  
+Se puede evitar con encriptación.  
+Dos tipos:  
+- Directa: inserta código html, con etiquetas como script o iframe.  
+- Indirecta: cuando se modifican valores de una app web para pasar valores entre dos paginas.  
+
+
+# Inyección SQL
+se trata de infiltrar codigo para hacer operaciones sobre una BBDD.  
+un programa es vulnerable a esto si no valida las entradas.   
+puede ocurrir cuando se piden parámetros al usuario para formar una SQL.  
+mediante esta tecnica se pueden borrar, insertar y/o modificar lineas en la BBDD.  
+en cada lenguaje de programación hay funciones para evitar estos ataques.  
+
+# Ataque informático
+operación que tiene como objetivo tomar en control, desestabilizar o dañar un sistem informático.  
+puede ser desde algo pequeño un ordenador personal, hasta ataques a empresas o organizaciones importantes, con grandes daños economicos.  
+
+
+
+# Ataque DDoS
+DoS. Ataque de denegación de servicio.  
+hace perder conectividad o por consumo del ancho de banda de la victima o sobrecarga de recursos informaticos.  
+DDoS. Ataque de denegación de servicio distribuido. Distributed denial service.  
+- generan gran flujo de trafico desde varios puntos a la vez a un sólo punto de destino.  
+
+
+# Ingeniería social
+se trata de manilpular a los usuarios para conseguir información sensible. Como permisos o acceso.  
+se hacen pasar por un banco, por tecnicos, clientes, compañeros de trabajo.  
+
+
+# hacker
+el que descubre vulnerabilidades en un sistema informatico.  
+no es un delincuente o pirata informatico.  
+se habla de la ética hacker que tiene los siguientes valores: 
+- pasión
+- libertad
+- conciencia social
+- verdad
+- anti-corrupción
+- igualdad social
+- libre acceso a la información
+- valor social
+- preocupación responsable
+- curiosidad
+- creatividad
+
+
+# cracker
+es el que rompe un sistema de seguridad.  
+puede ser con animo de lucro, por protesta o por desafio.  
+tipos de cracks:
+- troyanos: se instala un programa en la computadora infectada y ofrece control remoto. pasa desapercibido.  
+- analizadores de trafico de red.  
+- fuerza bruta: es probar todas las combinaciones de contraseñas.  
+- DDoS  
+- phishing  
+- suplantación. depsues de haber metido un troyano y sacar las claves por ejemplo. hacerse pasar por el otro, para seguir atacando a otros contactos.  
+
+
+# Man-in-the-middle
+el que se pone en medio de la transmisión con la capacidad de leer, modificar einsertar.  
+se utiliza cuando hay un intercambio de claves sin cifrar.  
+defensas a este tipo de ataque:
+- clave publica.  
+- autenticación mutua fuerte.  
+- contraseñas.  
+- uso de certificados.  
+
+
+# Phishing
+Se envia un mail suplantando una identidad, con la idea de obtener información confidencial.    
+Spam phishing se manda a muchos los mismo.  
+Spear phishing, se envia un mensaje particularizado al usuario.  
+Hay app para robar token oauth. Que se saltan el paso de contraseña y todo tipo de identificaciones, como claves queneradas al momento, smm al movil,..  
+  sappo  
+  esto no es un phishin al uso, porque no se suplanta la pagina de tu banco, gmail, office360,...  
+  el token oauth, sustituye al todo tipo de mecanismo de acceso, como usuario y contraseña,...  
+  el que tenga este token puede acceder a tu correo o lo que sea durante meses.  
+Con una IA se puede suplantar la voz e imagen (video conferencia).  
