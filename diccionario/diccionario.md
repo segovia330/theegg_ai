@@ -708,3 +708,40 @@ Hay app para robar token oauth. Que se saltan el paso de contraseña y todo tipo
   el token oauth, sustituye al todo tipo de mecanismo de acceso, como usuario y contraseña,...  
   el que tenga este token puede acceder a tu correo o lo que sea durante meses.  
 Con una IA se puede suplantar la voz e imagen (video conferencia).  
+
+
+# expresiones-regulares
+Son un potente lenguaje de descripción de texto.  
+Permiten:
+- buscar un substring al principio o al final.  
+- o alguna parte que se repita x veces.  
+- o algo que no aparezca. O sea un string que no contenga ciertas cosas.  
+Con ello se puede extraer partes de un texto, o sustituirlas por otras.  
+
+
+# procesamiento-del-lenguaje-natural
+Abarca las ciencias de la computación, inteligencia artificial y la linguistica.  
+Trata de desarrollar sistemas que faciliten la comunicación de personas y máquinas mediante el lenguaje natural.  
+En los inicios esto se hacia mediante unas reglas fijas.  
+Actualmente se usan tecnicas de aprendizaje automático.  
+Dificultades: separación de la entrada en palabras. Gestionar ambiguedades. Recepción imperfecta de datos.  
+Aplicaciones: sintesis de voz. Reconocimiento de voz. Traducción automática. Comprensión del lenguaje. Extración de información...   
+
+
+# scrapping
+WebScraping: Extraer información de una pagina web.  
+- Para hacer web scrapping con Python. Beautifulsoup  
+  - Permite extraer contenido de una web en formato HTML o XML.  
+  - Permite buscar en los siguientes tipos de elementos: Tag, NavigableString, hijos, padres...
+  - Y dentro de cada elemento: id, attrs, class,...
+- O Framework Sracpy.  
+  - 
+
+# crawling
+Descubrir enlaces de una web y navegar entre ellos.  
+Crawlers o arañas web son programas que inspeccionan webs de forma metodica y automatizada.  
+- se recorren todos los enlaces.
+- posteriormente mediante scraping se descargan las paginas.  
+- se recorren recursivamente por si hay modificaciones o nuevos enlaces.  
+
+
