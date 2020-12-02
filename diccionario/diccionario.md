@@ -745,3 +745,107 @@ Crawlers o arañas web son programas que inspeccionan webs de forma metodica y a
 - se recorren recursivamente por si hay modificaciones o nuevos enlaces.  
 
 
+# Código-fuente
+conjunto de líneas de texto, con instrucciones a ejecutar.  
+Puede estar escrito en distintos lenguajes de programación. c, c++, perl, python, java, javascript,...  
+- dependiendo del lenguaje será interpretado directamente o compilado.  
+
+
+# AJAX
+es una tecnología web.  
+permite tener comunicación asincrona con el servidor.  
+AJAX = Asynchronous Javascript and XML.  
+Maneja las siguientes tecnologías:
+- HTML  
+- DOM  
+- Javascript  
+- XMLHTTPREQUEST  
+- Formato de datos:  
+  - JSON
+  - XML
+  - HTML
+  - TXT
+
+
+
+
+
+
+# HTML
+HTML5  ver HTML arriba.  
+En los inicios paginas web estaticas. Sin apenas backend. Sin BBDD. Para actualizar contenido había que hacer muchos cambios en el FrontEnd.  
+Posterior, webs dinámicas.  
+- Backend  
+- BBDD  
+- Con PHP al principio.  
+- Empieza la comunicación bidireccional.  
+Al principio se debía refrescar toda la pagina.  
+- Posterior mediante porgramación asincrona no hace falta. Y sólo se refresca la parte que se requiere.  
+- web 2.0  
+
+Etiquetas. Las etiquetas sólo describen el contenido. No el aspecto.  
+- DOCTYPE
+- head. Cosas que salen en la pestaña de la pagina, como el titulo.  
+- body. Cosas que salen en la pagina en blanco.  
+- header
+- nav.  Barra de navegación.  
+- title
+- meta: metadatos. Description, authon, keywords,...  
+- p, p1..p6
+- h, h1..h6. También hay un hgroup para agruparlos.  
+- ul: lista desordenada.  
+- li: list item
+- section.  
+- article.  
+- aside. barra lateral
+- footer.  
+- a href. link a otra pagina.  
+
+APIs HTML5
+- Canvas  
+- Drag & drop
+- Geolocation
+- Storage
+- File
+- Web workes
+- History
+- Offline
+
+
+
+
+# Javascript
+ver arriba javascript.  
+
+
+# CSS
+CSS3 sirve para hacer responsive design.  
+- Hacer que una web se adapte a cualquier dispositivo. PC, movil, tablet,...  
+- hace que sea multiplataforma.  
+Varios frameworks
+- Bootstrap.  
+- Fundation 3.  
+- HTML 5 Boilerplate.  
+
+
+
+# Síncrono
+En una comunicación sincrona, cuando el cliente hace una petición al servidor, éste se queda a la espera del servidor.
+No permite continuar con la interacción del usuario mientras estamos en esa espera.  
+
+
+# Asíncrono
+Cuando el cliente hace una petición al servidor, no se queda bloqueado a la espera.  
+AJAX está en medio de ambos y es el que gestiona la petición, y la respuesto. En ambos sentidos.  
+Y cuando se obtiene respuesta sólo se refresca esa parte.  
+De está forma la pagina web es mucho más fluida, y el rendimiendo es mucho mejor al no tener que recargar todo cada vez.  
+
+
+# Interfaz
+El medio con el que se comunica el usuario con una máquina.  
+Puede ser un interfaz gráfico, línea de comandos, control por voz, táctil,...  
+Permite muchas funcionalidades:  
+- Poner en marcha o apagar el equipo.  
+- Configuración del equipo.  
+- Comunicación con otros sistemas.  
+- ...

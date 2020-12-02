@@ -1,0 +1,49 @@
+body{
+    background: lightgray;
+
+}
+
+#player, div {
+    height: 720px;
+    width: 60%;
+    margin-left: 150px;
+    padding: 20px;
+    background-color: gray;
+}
+
+h1 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+nav {
+    height: 50px;
+    font: 150% bold;
+}
+
+nav ul li {
+    float: left;
+    list-style: none;
+    margin: 10px;
+    margin-left: 100px;
+}
+
+p {
+    margin-left: 150px;
+    margin-top: 70px;
+    font: 120% arial;
+}
+
+aside {
+    float: right;
+    width: 25%;
+    margin-right: 50px;
+    background: darkgray;
+    min-height: 760px;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+}

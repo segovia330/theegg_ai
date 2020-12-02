@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>TheEgg_Task_42</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+        <script>
+            window.onload = function(){
+                if (annyang) {
+                    var commands = {
+                        'play': function() {
+                            //alert('Hi! Hola');
+                            playVideo()
+                        },
+                        'stop': function() {
+                            //alert('Hi! Adios.');
+                            stopVideo();
+                        }
+                    };
+                    annyang.addCommands(commands);
+                    annyang.start(); 
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1>CIRCUITO de PAU ARNOS</h1>
+        <hr>
+
+        <nav>
+            <ul>
+                <li>ICICIO</li>
+                <li>VIDEOS</li>
+                <li>FOTOS</li>
+                <li>BLOG</li>            
+            </ul>
+        </nav>
+
+        <hr>
+            
+        <p>
+            Prototipo de chasis tubular.
+            <br>
+            Motor de BMW E30 325i.
+            <br>
+            Potencia 178 CV.
+            <br>
+            Peso 650 Kg.            
+        </p>
+        
+        <div id="player"></div>
+
+        <aside>
+            <p>Otros circuitos</p>
+            <ul>
+                <li>Los Arcos</li>
+                <li>Nurburgring</li>
+            </ul>
+
+        </aside>
+
+        <footer>
+            <a href="http://www.osracing.es">2020 OSRacing</a>
+        </footer>
+
+        <script>
+            var tag = document.createElement('script');
+    
+            tag.src = "https://www.youtube.com/iframe_api";
+            var firstScriptTag = document.getElementsByTagName('script')[0];
+            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    
+            var player;
+            
+            function onYouTubeIframeAPIReady() {
+                player = new YT.Player('player', {
+                videoId: 'W8p_ErGXMQo',
+                playerVars: {
+                    autoplay: 1
+                },
+                events: {
+                    'onReady': onPlayerReady,
+                    'onStateChange': onPlayerStateChange
+                }
+            });
+          }
+    
+          function onPlayerReady(event) {
+            // alert('Hi! Ready.');
+            player.play();
+          }
+
+          var done = false;
+            function onPlayerStateChange(event) {        
+          }
+
+          function playVideo() {
+            player.playVideo();
+          }
+
+          function pauseVideo() {
+            player.pauseVideo();
+          }
+          
+          function stopVideo() {
+            player.stopVideo();
+          }
+
+        </script>
+        <link rel="stylesheet" href="estilo.css">
+    </body>
+</html>
